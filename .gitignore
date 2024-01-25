@@ -8,5 +8,5 @@
 bin/
 obj/
 
-# Migrations
-Migrations/
+# Logs
+logs/
