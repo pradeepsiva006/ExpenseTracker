@@ -1,0 +1,228 @@
+2024-01-25T00:20:31.7390419+01:00  [INF] User profile is available. Using '"C:\Users\prade\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-01-25T00:20:31.9934461+01:00  [INF] Now listening on: "http://localhost:5005" (d826f4b8)
+2024-01-25T00:20:31.9973571+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-25T00:20:32.0241959+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-25T00:20:32.0263041+01:00  [INF] Content root path: "C:\Pradeep\Sweden\Practise\C#\RillionInterview\ExpenseTracker\ExpenseTracker.API" (cc26f24e)
+2024-01-25T00:20:32.5788045+01:00 0HN0T6C7NU71B:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/index.html""" - null null (d509f86a)
+2024-01-25T00:20:33.4538473+01:00 0HN0T6C7NU71B:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 886.7217ms (74253ad3)
+2024-01-25T00:20:33.5100807+01:00 0HN0T6C7NU71B:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2024-01-25T00:20:33.5144733+01:00 0HN0T6C7NU71C:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/_vs/browserLink""" - null null (d509f86a)
+2024-01-25T00:20:33.5148401+01:00 0HN0T6C7NU71B:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/_framework/aspnetcore-browser-refresh.js""" - 200 13772 "application/javascript; charset=utf-8" 4.9805ms (74253ad3)
+2024-01-25T00:20:33.5547698+01:00 0HN0T6C7NU71C:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 40.345ms (74253ad3)
+2024-01-25T00:20:33.6512071+01:00 0HN0T6C7NU71C:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-01-25T00:20:33.7838639+01:00 0HN0T6C7NU71C:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 132.6833ms (74253ad3)
+2024-01-25T00:20:53.3690168+01:00 0HN0T6C7NU71D:00000001 [INF] Request starting "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/register""" - "application/json" 44 (d509f86a)
+2024-01-25T00:20:53.3914406+01:00 0HN0T6C7NU71D:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-01-25T00:20:53.3926194+01:00 0HN0T6C7NU71D:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T00:20:53.3980599+01:00 0HN0T6C7NU71D:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.AuthController.RegisterUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T00:20:53.4290339+01:00 0HN0T6C7NU71D:00000001 [INF] Route matched with "{action = \"RegisterUser\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ExpenseTracker.Common.DTOs.UserRequestDTO)" on controller "ExpenseTracker.API.Controllers.AuthController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T00:20:54.0516527+01:00 0HN0T6C7NU71D:00000001 [INF] Logging working for RegisterUser() (f3cca0e0)
+2024-01-25T00:20:54.7329237+01:00 0HN0T6C7NU71D:00000001 [INF] Executed DbCommand ("70"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0" (0723d8ff)
+2024-01-25T00:20:55.1567160+01:00 0HN0T6C7NU71D:00000001 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'. (f90d6462)
+2024-01-25T00:20:55.1659289+01:00 0HN0T6C7NU71D:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (Size = 255), @p1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);" (0723d8ff)
+2024-01-25T00:20:55.2344577+01:00 0HN0T6C7NU71D:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.UserResponseDto"'. (605b4265)
+2024-01-25T00:20:55.2411427+01:00 0HN0T6C7NU71D:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.AuthController.RegisterUser (ExpenseTracker.API)" in 1808.5472ms (afa2e885)
+2024-01-25T00:20:55.2416582+01:00 0HN0T6C7NU71D:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.AuthController.RegisterUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T00:20:55.2505016+01:00 0HN0T6C7NU71D:00000001 [INF] Request finished "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/register""" - 200 null "application/json; charset=utf-8" 1881.5779ms (74253ad3)
+2024-01-25T12:04:49.5641414+01:00  [INF] User profile is available. Using '"C:\Users\prade\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-01-25T12:04:50.0692861+01:00  [INF] Now listening on: "http://localhost:5005" (d826f4b8)
+2024-01-25T12:04:50.0788656+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-25T12:04:50.0845938+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-25T12:04:50.0896954+01:00  [INF] Content root path: "C:\Pradeep\Sweden\Practise\C#\RillionInterview\ExpenseTracker\ExpenseTracker.API" (cc26f24e)
+2024-01-25T12:04:54.6282334+01:00 0HN0TILPNBIOF:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/index.html""" - null null (d509f86a)
+2024-01-25T12:04:54.9957954+01:00 0HN0TILPNBIOF:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 374.5179ms (74253ad3)
+2024-01-25T12:04:55.0060590+01:00 0HN0TILPNBIOF:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2024-01-25T12:04:55.0106370+01:00 0HN0TILPNBIOG:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/_vs/browserLink""" - null null (d509f86a)
+2024-01-25T12:04:55.0108346+01:00 0HN0TILPNBIOF:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/_framework/aspnetcore-browser-refresh.js""" - 200 13772 "application/javascript; charset=utf-8" 5.1524ms (74253ad3)
+2024-01-25T12:04:55.1018071+01:00 0HN0TILPNBIOG:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 91.2257ms (74253ad3)
+2024-01-25T12:04:55.1619177+01:00 0HN0TILPNBIOG:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-01-25T12:04:55.2470494+01:00 0HN0TILPNBIOG:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 85.2219ms (74253ad3)
+2024-01-25T12:05:31.8800926+01:00 0HN0TILPNBIOH:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/api/Expense/GetAllExpenses""" - null null (d509f86a)
+2024-01-25T12:05:31.9667020+01:00 0HN0TILPNBIOH:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-01-25T12:05:31.9720178+01:00 0HN0TILPNBIOH:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.ExpenseController.GetAllExpensesForUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T12:05:32.0038050+01:00 0HN0TILPNBIOH:00000001 [INF] Route matched with "{action = \"GetAllExpensesForUser\", controller = \"Expense\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllExpensesForUser()" on controller "ExpenseTracker.API.Controllers.ExpenseController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T12:05:33.5691082+01:00 0HN0TILPNBIOH:00000001 [INF] Executed DbCommand ("121"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Amount], [e].[Category], [e].[Date], [e].[ShortDescription], [e].[UserId]
+FROM [Expenses] AS [e]
+WHERE [e].[UserId] = @__userId_0" (0723d8ff)
+2024-01-25T12:05:38.3409850+01:00 0HN0TILPNBIOH:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.ExpenseResponseDto"'. (605b4265)
+2024-01-25T12:05:38.3588224+01:00 0HN0TILPNBIOH:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.ExpenseController.GetAllExpensesForUser (ExpenseTracker.API)" in 6351.7831ms (afa2e885)
+2024-01-25T12:05:38.3592441+01:00 0HN0TILPNBIOH:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.ExpenseController.GetAllExpensesForUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T12:05:38.3651991+01:00 0HN0TILPNBIOH:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/api/Expense/GetAllExpenses""" - 200 null "application/json; charset=utf-8" 6485.1605ms (74253ad3)
+2024-01-25T12:29:00.5729454+01:00 0HN0TILPNBIOI:00000001 [INF] Request starting "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/register""" - "application/json" 42 (d509f86a)
+2024-01-25T12:29:00.6045427+01:00 0HN0TILPNBIOI:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T12:29:00.6118408+01:00 0HN0TILPNBIOI:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.AuthController.RegisterUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T12:29:00.6384831+01:00 0HN0TILPNBIOI:00000001 [INF] Route matched with "{action = \"RegisterUser\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ExpenseTracker.Common.DTOs.UserRequestDTO)" on controller "ExpenseTracker.API.Controllers.AuthController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T12:29:00.8478675+01:00 0HN0TILPNBIOI:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0" (0723d8ff)
+2024-01-25T12:29:01.2558113+01:00 0HN0TILPNBIOI:00000001 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'. (f90d6462)
+2024-01-25T12:29:01.2724573+01:00 0HN0TILPNBIOI:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=["@p0='?' (Size = 255), @p1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);" (0723d8ff)
+2024-01-25T12:29:01.3183193+01:00 0HN0TILPNBIOI:00000001 [INF] AuthController : RegisterUser() Registration successful for user : prdp (abdc1eea)
+2024-01-25T12:29:01.3189806+01:00 0HN0TILPNBIOI:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.UserResponseDto"'. (605b4265)
+2024-01-25T12:29:01.3211102+01:00 0HN0TILPNBIOI:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.AuthController.RegisterUser (ExpenseTracker.API)" in 682.4623ms (afa2e885)
+2024-01-25T12:29:01.3212146+01:00 0HN0TILPNBIOI:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.AuthController.RegisterUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T12:29:01.3214900+01:00 0HN0TILPNBIOI:00000001 [INF] Request finished "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/register""" - 200 null "application/json; charset=utf-8" 753.2962ms (74253ad3)
+2024-01-25T12:30:02.7718798+01:00 0HN0TILPNBIOJ:00000001 [INF] Request starting "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/login""" - "application/json" 42 (d509f86a)
+2024-01-25T12:30:02.7772844+01:00 0HN0TILPNBIOJ:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T12:30:02.7786833+01:00 0HN0TILPNBIOJ:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.AuthController.LoginUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T12:30:02.7843259+01:00 0HN0TILPNBIOJ:00000001 [INF] Route matched with "{action = \"LoginUser\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ExpenseTracker.Common.DTOs.UserRequestDTO)" on controller "ExpenseTracker.API.Controllers.AuthController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T12:30:02.8037817+01:00 0HN0TILPNBIOJ:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0" (0723d8ff)
+2024-01-25T12:30:03.0192482+01:00 0HN0TILPNBIOJ:00000001 [INF] AuthController : LoginUser() Login successful for user : prdp (9f22bcc0)
+2024-01-25T12:30:03.0195075+01:00 0HN0TILPNBIOJ:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.UserResponseDto"'. (605b4265)
+2024-01-25T12:30:03.0198262+01:00 0HN0TILPNBIOJ:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.AuthController.LoginUser (ExpenseTracker.API)" in 235.4439ms (afa2e885)
+2024-01-25T12:30:03.0198640+01:00 0HN0TILPNBIOJ:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.AuthController.LoginUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T12:30:03.0200021+01:00 0HN0TILPNBIOJ:00000001 [INF] Request finished "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 248.2387ms (74253ad3)
+2024-01-25T12:30:48.5669748+01:00 0HN0TILPNBIOK:00000001 [INF] Request starting "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Expense/addExpense""" - "application/json" 145 (d509f86a)
+2024-01-25T12:30:48.5721557+01:00 0HN0TILPNBIOK:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T12:30:48.5741728+01:00 0HN0TILPNBIOK:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.ExpenseController.AddExpenseForUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T12:30:48.5811412+01:00 0HN0TILPNBIOK:00000001 [INF] Route matched with "{action = \"AddExpenseForUser\", controller = \"Expense\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddExpenseForUser(ExpenseTracker.Common.DTOs.ExpenseRequestDto)" on controller "ExpenseTracker.API.Controllers.ExpenseController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T12:30:48.6140368+01:00 0HN0TILPNBIOK:00000001 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'. (f90d6462)
+2024-01-25T12:30:48.6340485+01:00 0HN0TILPNBIOK:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=["@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Expenses] ([Amount], [Category], [Date], [ShortDescription], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2024-01-25T12:30:48.6379565+01:00 0HN0TILPNBIOK:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.BaseResponseDto"'. (605b4265)
+2024-01-25T12:30:48.6387445+01:00 0HN0TILPNBIOK:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.ExpenseController.AddExpenseForUser (ExpenseTracker.API)" in 57.5291ms (afa2e885)
+2024-01-25T12:30:48.6387770+01:00 0HN0TILPNBIOK:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.ExpenseController.AddExpenseForUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T12:30:48.6388887+01:00 0HN0TILPNBIOK:00000001 [INF] Request finished "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Expense/addExpense""" - 200 null "application/json; charset=utf-8" 71.9993ms (74253ad3)
+2024-01-25T12:31:24.4432763+01:00 0HN0TILPNBIOL:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/api/Expense/GetAllExpenses""" - null null (d509f86a)
+2024-01-25T12:31:24.4478557+01:00 0HN0TILPNBIOL:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.ExpenseController.GetAllExpensesForUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T12:31:24.4480982+01:00 0HN0TILPNBIOL:00000001 [INF] Route matched with "{action = \"GetAllExpensesForUser\", controller = \"Expense\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllExpensesForUser()" on controller "ExpenseTracker.API.Controllers.ExpenseController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T12:31:24.4636200+01:00 0HN0TILPNBIOL:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Amount], [e].[Category], [e].[Date], [e].[ShortDescription], [e].[UserId]
+FROM [Expenses] AS [e]
+WHERE [e].[UserId] = @__userId_0" (0723d8ff)
+2024-01-25T12:31:28.5490206+01:00 0HN0TILPNBIOL:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.ExpenseResponseDto"'. (605b4265)
+2024-01-25T12:31:28.5492402+01:00 0HN0TILPNBIOL:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.ExpenseController.GetAllExpensesForUser (ExpenseTracker.API)" in 4101.1124ms (afa2e885)
+2024-01-25T12:31:28.5492630+01:00 0HN0TILPNBIOL:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.ExpenseController.GetAllExpensesForUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T12:31:28.5502096+01:00 0HN0TILPNBIOL:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/api/Expense/GetAllExpenses""" - 200 null "application/json; charset=utf-8" 4107.0014ms (74253ad3)
+2024-01-25T12:32:15.2797518+01:00 0HN0TILPNBIOM:00000001 [INF] Request starting "HTTP/1.1" "PUT" "http"://"localhost:5005""""/api/Expense/updateExpense""" - "application/json" 159 (d509f86a)
+2024-01-25T12:32:15.2803093+01:00 0HN0TILPNBIOM:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T12:32:15.2804745+01:00 0HN0TILPNBIOM:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.ExpenseController.UpdateExpenseForUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T12:32:15.2835056+01:00 0HN0TILPNBIOM:00000001 [INF] Route matched with "{action = \"UpdateExpenseForUser\", controller = \"Expense\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateExpenseForUser(ExpenseTracker.Common.DTOs.ExpenseRequestDto)" on controller "ExpenseTracker.API.Controllers.ExpenseController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T12:32:15.3089636+01:00 0HN0TILPNBIOM:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@p5='?' (DbType = Int32), @p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Expenses] SET [Amount] = @p0, [Category] = @p1, [Date] = @p2, [ShortDescription] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;" (0723d8ff)
+2024-01-25T12:32:15.3105534+01:00 0HN0TILPNBIOM:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.BaseResponseDto"'. (605b4265)
+2024-01-25T12:32:15.3106976+01:00 0HN0TILPNBIOM:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.ExpenseController.UpdateExpenseForUser (ExpenseTracker.API)" in 27.1504ms (afa2e885)
+2024-01-25T12:32:15.3107353+01:00 0HN0TILPNBIOM:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.ExpenseController.UpdateExpenseForUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T12:32:15.3108509+01:00 0HN0TILPNBIOM:00000001 [INF] Request finished "HTTP/1.1" "PUT" "http"://"localhost:5005""""/api/Expense/updateExpense""" - 200 null "application/json; charset=utf-8" 31.2026ms (74253ad3)
+2024-01-25T12:34:47.4707151+01:00  [INF] User profile is available. Using '"C:\Users\prade\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-01-25T12:34:47.7683937+01:00  [INF] Now listening on: "http://localhost:5005" (d826f4b8)
+2024-01-25T12:34:47.7728771+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-25T12:34:47.7746674+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-25T12:34:47.7759748+01:00  [INF] Content root path: "C:\Pradeep\Sweden\Practise\C#\RillionInterview\ExpenseTracker\ExpenseTracker.API" (cc26f24e)
+2024-01-25T12:34:51.0868100+01:00 0HN0TJ6HD4G1C:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/index.html""" - null null (d509f86a)
+2024-01-25T12:34:51.3430756+01:00 0HN0TJ6HD4G1C:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 261.5744ms (74253ad3)
+2024-01-25T12:34:51.3603833+01:00 0HN0TJ6HD4G1C:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2024-01-25T12:34:51.3612569+01:00 0HN0TJ6HD4G1D:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/_vs/browserLink""" - null null (d509f86a)
+2024-01-25T12:34:51.3629097+01:00 0HN0TJ6HD4G1C:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/_framework/aspnetcore-browser-refresh.js""" - 200 13772 "application/javascript; charset=utf-8" 2.5556ms (74253ad3)
+2024-01-25T12:34:51.4105876+01:00 0HN0TJ6HD4G1D:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 49.3629ms (74253ad3)
+2024-01-25T12:34:51.4633211+01:00 0HN0TJ6HD4G1D:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-01-25T12:34:51.5604298+01:00 0HN0TJ6HD4G1D:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 97.1659ms (74253ad3)
+2024-01-25T12:35:24.7008109+01:00 0HN0TJ6HD4G1E:00000001 [INF] Request starting "HTTP/1.1" "PUT" "http"://"localhost:5005""""/api/Expense/updateExpense""" - "application/json" 152 (d509f86a)
+2024-01-25T12:35:24.8012031+01:00 0HN0TJ6HD4G1E:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-01-25T12:35:24.8030307+01:00 0HN0TJ6HD4G1E:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T12:35:24.8118754+01:00 0HN0TJ6HD4G1E:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.ExpenseController.UpdateExpenseForUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T12:35:24.8426421+01:00 0HN0TJ6HD4G1E:00000001 [INF] Route matched with "{action = \"UpdateExpenseForUser\", controller = \"Expense\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateExpenseForUser(ExpenseTracker.Common.DTOs.ExpenseRequestDto)" on controller "ExpenseTracker.API.Controllers.ExpenseController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T12:35:25.5697446+01:00 0HN0TJ6HD4G1E:00000001 [ERR] ExpenseController : UpdateExpenseForUser() aborted as the userId in the request body does not match with the token! (ce724d70)
+2024-01-25T12:35:25.5745527+01:00 0HN0TJ6HD4G1E:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"System.String"'. (605b4265)
+2024-01-25T12:35:25.5776805+01:00 0HN0TJ6HD4G1E:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.ExpenseController.UpdateExpenseForUser (ExpenseTracker.API)" in 732.3837ms (afa2e885)
+2024-01-25T12:35:25.5777891+01:00 0HN0TJ6HD4G1E:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.ExpenseController.UpdateExpenseForUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T12:35:25.5822613+01:00 0HN0TJ6HD4G1E:00000001 [INF] Request finished "HTTP/1.1" "PUT" "http"://"localhost:5005""""/api/Expense/updateExpense""" - 400 null "text/plain; charset=utf-8" 881.5639ms (74253ad3)
+2024-01-25T12:35:46.6986507+01:00 0HN0TJ6HD4G1F:00000001 [INF] Request starting "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/login""" - "application/json" 42 (d509f86a)
+2024-01-25T12:35:46.7008379+01:00 0HN0TJ6HD4G1F:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T12:35:46.7011062+01:00 0HN0TJ6HD4G1F:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.AuthController.LoginUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T12:35:46.7054179+01:00 0HN0TJ6HD4G1F:00000001 [INF] Route matched with "{action = \"LoginUser\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ExpenseTracker.Common.DTOs.UserRequestDTO)" on controller "ExpenseTracker.API.Controllers.AuthController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T12:35:47.4053628+01:00 0HN0TJ6HD4G1F:00000001 [INF] Executed DbCommand ("53"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0" (0723d8ff)
+2024-01-25T12:35:47.7067530+01:00 0HN0TJ6HD4G1F:00000001 [INF] AuthController : LoginUser() Login successful for user : prdp (9f22bcc0)
+2024-01-25T12:35:47.7093503+01:00 0HN0TJ6HD4G1F:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.UserResponseDto"'. (605b4265)
+2024-01-25T12:35:47.7126114+01:00 0HN0TJ6HD4G1F:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.AuthController.LoginUser (ExpenseTracker.API)" in 1007.0778ms (afa2e885)
+2024-01-25T12:35:47.7129264+01:00 0HN0TJ6HD4G1F:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.AuthController.LoginUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T12:35:47.7170298+01:00 0HN0TJ6HD4G1F:00000001 [INF] Request finished "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 1018.4243ms (74253ad3)
+2024-01-25T12:36:23.3350527+01:00 0HN0TJ6HD4G1G:00000001 [INF] Request starting "HTTP/1.1" "PUT" "http"://"localhost:5005""""/api/Expense/updateExpense""" - "application/json" 152 (d509f86a)
+2024-01-25T12:36:23.3370439+01:00 0HN0TJ6HD4G1G:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T12:36:23.3384496+01:00 0HN0TJ6HD4G1G:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.ExpenseController.UpdateExpenseForUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T12:36:23.3387526+01:00 0HN0TJ6HD4G1G:00000001 [INF] Route matched with "{action = \"UpdateExpenseForUser\", controller = \"Expense\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateExpenseForUser(ExpenseTracker.Common.DTOs.ExpenseRequestDto)" on controller "ExpenseTracker.API.Controllers.ExpenseController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T12:36:23.4416083+01:00 0HN0TJ6HD4G1G:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=["@p5='?' (DbType = Int32), @p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Expenses] SET [Amount] = @p0, [Category] = @p1, [Date] = @p2, [ShortDescription] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;" (0723d8ff)
+2024-01-25T12:36:23.6052209+01:00 0HN0TJ6HD4G1G:00000001 [INF] Executing "ObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.BaseResponseDto"'. (605b4265)
+2024-01-25T12:36:23.6070499+01:00 0HN0TJ6HD4G1G:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.ExpenseController.UpdateExpenseForUser (ExpenseTracker.API)" in 268.245ms (afa2e885)
+2024-01-25T12:36:23.6071024+01:00 0HN0TJ6HD4G1G:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.ExpenseController.UpdateExpenseForUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T12:36:23.6073431+01:00 0HN0TJ6HD4G1G:00000001 [INF] Request finished "HTTP/1.1" "PUT" "http"://"localhost:5005""""/api/Expense/updateExpense""" - 500 null "application/json; charset=utf-8" 272.3843ms (74253ad3)
+2024-01-25T13:07:14.4518934+01:00  [INF] User profile is available. Using '"C:\Users\prade\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-01-25T13:07:14.6242941+01:00  [INF] Now listening on: "http://localhost:5005" (d826f4b8)
+2024-01-25T13:07:14.6289486+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-25T13:07:14.6304942+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-25T13:07:14.6320632+01:00  [INF] Content root path: "C:\Pradeep\Sweden\Practise\C#\RillionInterview\ExpenseTracker\ExpenseTracker.API" (cc26f24e)
+2024-01-25T13:07:17.6056771+01:00 0HN0TJOLJLMR7:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/index.html""" - null null (d509f86a)
+2024-01-25T13:07:17.9022082+01:00 0HN0TJOLJLMR7:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 305.3503ms (74253ad3)
+2024-01-25T13:07:17.9121771+01:00 0HN0TJOLJLMR8:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/_vs/browserLink""" - null null (d509f86a)
+2024-01-25T13:07:17.9123706+01:00 0HN0TJOLJLMR7:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2024-01-25T13:07:17.9149215+01:00 0HN0TJOLJLMR7:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/_framework/aspnetcore-browser-refresh.js""" - 200 13772 "application/javascript; charset=utf-8" 2.4643ms (74253ad3)
+2024-01-25T13:07:17.9645211+01:00 0HN0TJOLJLMR8:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 52.4372ms (74253ad3)
+2024-01-25T13:07:18.0284507+01:00 0HN0TJOLJLMR8:00000002 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-01-25T13:07:18.1233366+01:00 0HN0TJOLJLMR8:00000002 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 95.0242ms (74253ad3)
+2024-01-25T13:07:36.9768994+01:00 0HN0TJOLJLMR9:00000001 [INF] Request starting "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/login""" - "application/json" 42 (d509f86a)
+2024-01-25T13:07:36.9975795+01:00 0HN0TJOLJLMR9:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-01-25T13:07:36.9992392+01:00 0HN0TJOLJLMR9:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T13:07:37.0040595+01:00 0HN0TJOLJLMR9:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.AuthController.LoginUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T13:07:37.0336946+01:00 0HN0TJOLJLMR9:00000001 [INF] Route matched with "{action = \"LoginUser\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ExpenseTracker.Common.DTOs.UserRequestDTO)" on controller "ExpenseTracker.API.Controllers.AuthController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T13:07:38.5716036+01:00 0HN0TJOLJLMR9:00000001 [INF] Executed DbCommand ("182"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0" (0723d8ff)
+2024-01-25T13:07:38.9906725+01:00 0HN0TJOLJLMR9:00000001 [INF] AuthController : LoginUser() Login successful for user : prdp (9f22bcc0)
+2024-01-25T13:07:38.9983794+01:00 0HN0TJOLJLMR9:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.UserResponseDto"'. (605b4265)
+2024-01-25T13:07:39.0056356+01:00 0HN0TJOLJLMR9:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.AuthController.LoginUser (ExpenseTracker.API)" in 1968.6133ms (afa2e885)
+2024-01-25T13:07:39.0061291+01:00 0HN0TJOLJLMR9:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.AuthController.LoginUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T13:07:39.0135223+01:00 0HN0TJOLJLMR9:00000001 [INF] Request finished "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 2036.7163ms (74253ad3)
+2024-01-25T13:08:12.8397133+01:00 0HN0TJOLJLMRA:00000001 [INF] Request starting "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Expense/addExpense""" - "application/json" 147 (d509f86a)
+2024-01-25T13:08:12.9002190+01:00 0HN0TJOLJLMRA:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2024-01-25T13:08:12.9040952+01:00 0HN0TJOLJLMRA:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.ExpenseController.AddExpenseForUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T13:08:12.9070924+01:00 0HN0TJOLJLMRA:00000001 [INF] Route matched with "{action = \"AddExpenseForUser\", controller = \"Expense\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddExpenseForUser(ExpenseTracker.Common.DTOs.ExpenseRequestDto)" on controller "ExpenseTracker.API.Controllers.ExpenseController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T13:08:13.1428849+01:00 0HN0TJOLJLMRA:00000001 [INF] Executing "ObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.BaseResponseDto"'. (605b4265)
+2024-01-25T13:08:13.1437985+01:00 0HN0TJOLJLMRA:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.ExpenseController.AddExpenseForUser (ExpenseTracker.API)" in 236.5901ms (afa2e885)
+2024-01-25T13:08:13.1438418+01:00 0HN0TJOLJLMRA:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.ExpenseController.AddExpenseForUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T13:08:13.1439729+01:00 0HN0TJOLJLMRA:00000001 [INF] Request finished "HTTP/1.1" "POST" "http"://"localhost:5005""""/api/Expense/addExpense""" - 500 null "application/json; charset=utf-8" 304.3468ms (74253ad3)
+2024-01-25T13:08:58.6504645+01:00 0HN0TJOLJLMRB:00000001 [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:5005""""/api/Expense/GetAllExpenses""" - null null (d509f86a)
+2024-01-25T13:08:58.6549754+01:00 0HN0TJOLJLMRB:00000001 [INF] Executing endpoint '"ExpenseTracker.API.Controllers.ExpenseController.GetAllExpensesForUser (ExpenseTracker.API)"' (500cc934)
+2024-01-25T13:08:58.6573908+01:00 0HN0TJOLJLMRB:00000001 [INF] Route matched with "{action = \"GetAllExpensesForUser\", controller = \"Expense\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllExpensesForUser()" on controller "ExpenseTracker.API.Controllers.ExpenseController" ("ExpenseTracker.API"). (122b2fdf)
+2024-01-25T13:08:58.6977441+01:00 0HN0TJOLJLMRB:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Amount], [e].[Category], [e].[Date], [e].[ShortDescription], [e].[UserId]
+FROM [Expenses] AS [e]
+WHERE [e].[UserId] = @__userId_0" (0723d8ff)
+2024-01-25T13:08:58.7276245+01:00 0HN0TJOLJLMRB:00000001 [INF] Executing "OkObjectResult", writing value of type '"ExpenseTracker.Common.DTOs.ExpenseResponseDto"'. (605b4265)
+2024-01-25T13:08:58.7335992+01:00 0HN0TJOLJLMRB:00000001 [INF] Executed action "ExpenseTracker.API.Controllers.ExpenseController.GetAllExpensesForUser (ExpenseTracker.API)" in 76.0833ms (afa2e885)
+2024-01-25T13:08:58.7336596+01:00 0HN0TJOLJLMRB:00000001 [INF] Executed endpoint '"ExpenseTracker.API.Controllers.ExpenseController.GetAllExpensesForUser (ExpenseTracker.API)"' (99874f2b)
+2024-01-25T13:08:58.7339164+01:00 0HN0TJOLJLMRB:00000001 [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:5005""""/api/Expense/GetAllExpenses""" - 200 null "application/json; charset=utf-8" 83.4845ms (74253ad3)
